@@ -1,0 +1,49 @@
+local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11053/mphil-animal-biology-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11063/animal-biology-phd/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11053/mphil-animal-biology-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11063/animal-biology-phd/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11054/mphil-bioarchaeology-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11692/bioarchaelogy-phd/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/10920/phd-mphil-biostatistics/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11118/mphil-biotechnology-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11696/phd-biomolecular-science-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11064/biomolecular-science-phd/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11065/biotechnology-phd/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11055/mphil-environmental-biology-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/05720/phd-environmental-geochemistry-and-geomicrobiology/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11128/mphil-evolutionary-biology-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11698/mphil-genetics-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11090/evolutionary-biology-phd/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/10934/phd-mphil-health-services-and-primary-care/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11691/genetics-phd/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11131/mphil-microbiology-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11702/mphil-molecular-biology-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11098/molecular-biology-phd/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11095/microbiology-phd/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11134/mphil-plant-sciences-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11113/plant-sciences-phd/all-content/
+========================

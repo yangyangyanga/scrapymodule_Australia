@@ -1,0 +1,105 @@
+empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================'list' object has no attribute 'xpath'
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-human-resource-management-business/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================'list' object has no attribute 'xpath'
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-strategic-marketing-management/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-accounting-finance/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-business-analytics/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-business-management/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-business-economics-and-finance/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/languages-social-sciences/eu-internationalrelations/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-entrepreneurship/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-finance/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/isba/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/pre-masters/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-international-accounting-finance/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-human-resource-management-business/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/languages-social-sciences/eu-internationalrelations/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-investment-analysis/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-international-business/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-organisational-behaviour/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-strategy-international-business/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-strategic-marketing-management/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-supply-chain-management/
+========================'Learning, teaching & assessment' is not in list
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-work-psychology-business/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================'AstonMastersResearchSchoolItem does not support field: startdateIndex'
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/life-health-sciences/msc-clinical-science-neurosensory-sciences/
+========================'AstonMastersResearchSchoolItem does not support field: startdateIndex'
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/eas/msc-computer-science/
+========================'AstonMastersResearchSchoolItem does not support field: startdateIndex'
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-accounting-finance/
+========================'AstonMastersResearchSchoolItem does not support field: startdateIndex'
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/life-health-sciences/mscneurophysiology/
+========================'AstonMastersResearchSchoolItem does not support field: startdateIndex'
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/life-health-sciences/mscneurophysiology/
+========================'AstonMastersResearchSchoolItem does not support field: startdateIndex'
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-business-management/
+========================'AstonMastersResearchSchoolItem does not support field: startdateIndex'
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/life-health-sciences/doctor-of-hearing-therapy/
+========================'AstonMastersResearchSchoolItem does not support field: startdateIndex'
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/life-health-sciences/biomedical-sciences/
+========================'AstonMastersResearchSchoolItem does not support field: startdateIndex'
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/abs/abs/msc-business-analytics/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================local variable 'fee' referenced before assignment
+http://www.aston.ac.uk/study/postgraduate/taught-programmes/life-health-sciences/msc-clinical-science-neurosensory-sciences/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================empty separator
+http://www.aston.ac.uk/aston-business-school/programmes/aston-mba/full-time-mba/
+========================

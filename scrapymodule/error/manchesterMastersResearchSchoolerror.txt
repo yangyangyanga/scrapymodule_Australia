@@ -1,0 +1,33 @@
+local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11053/mphil-animal-biology-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11063/animal-biology-phd/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11053/mphil-animal-biology-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11053/mphil-animal-biology-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11063/animal-biology-phd/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11053/mphil-animal-biology-mphil/all-content/
+========================local variable 'entryrequirementsIndex' referenced before assignment
+http://www.manchester.ac.uk/study/masters/courses/list/11063/animal-biology-phd/all-content/
+========================'Fitness to practise / health requirements' is not in list
+http://www.manchester.ac.uk/study/masters/courses/list/01696/mphil-accounting-and-finance/all-content/
+========================'Fitness to practise / health requirements' is not in list
+http://www.manchester.ac.uk/study/masters/courses/list/02880/phd-accounting-and-finance/all-content/
+========================'Fitness to practise / health requirements' is not in list
+http://www.manchester.ac.uk/study/masters/courses/list/08249/phd-applied-theatre/all-content/
+========================'Fitness to practise / health requirements' is not in list
+http://www.manchester.ac.uk/study/masters/courses/list/02898/phd-art-history-and-visual-studies/all-content/
+========================'Fitness to practise / health requirements' is not in list
+http://www.manchester.ac.uk/study/masters/courses/list/02893/phd-archaeology/all-content/
+========================'Fitness to practise / health requirements' is not in list
+http://www.manchester.ac.uk/study/masters/courses/list/09085/phd-arts-and-cultural-management/all-content/
+========================'Fitness to practise / health requirements' is not in list
+http://www.manchester.ac.uk/study/masters/courses/list/08459/phd-anthropology-media-and-performance/all-content/
+========================'Fitness to practise / health requirements' is not in list
+http://www.manchester.ac.uk/study/masters/courses/list/08435/phd-arts-management-and-cultural-policy/all-content/
+========================'Fitness to practise / health requirements' is not in list
+http://www.manchester.ac.uk/study/masters/courses/list/07039/phd-arab-world-studies/all-content/
+========================
