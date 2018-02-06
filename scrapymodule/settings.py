@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'scrapymodule.spiders'
 #USER_AGENT = 'scrapymodule (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 LOG_LEVEL = 'WARNING'
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -71,7 +71,14 @@ ITEM_PIPELINES = {
    # 'scrapymodule.pipelines.KingsMastersSchoolPipeline': 300,
     # 'scrapymodule.pipelines.ManchesterMastersResearchSchoolPipeline': 300,
     # 'scrapymodule.pipelines.StrathMastersResearchSchoolPipeline': 300,
-    'scrapymodule.pipelines.AstonMastersSchoolPipeline': 300,
+    # 'scrapymodule.pipelines.AstonMastersSchoolPipeline': 300,
+    # 'scrapymodule.pipelines.CardiffmetBenSchoolPipeline': 300,
+    # 'scrapymodule.pipelines.HertsBenSchoolPipeline': 300,
+    # 'scrapymodule.pipelines.BathspaBenSchoolPipeline': 300,
+    # 'scrapymodule.pipelines.UclanBenSchoolPipeline': 300,
+    # 'scrapymodule.pipelines.SalfordBenSchoolPipeline': 300,
+    # 'scrapymodule.pipelines.SalfordMastersTaughtSchoolPipeline': 300,
+    'scrapymodule.pipelines.SalfordMastersResearchSchoolPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
