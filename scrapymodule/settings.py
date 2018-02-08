@@ -75,12 +75,13 @@ ITEM_PIPELINES = {
     # 'scrapymodule.pipelines.CardiffmetBenSchoolPipeline': 300,
     # 'scrapymodule.pipelines.HertsBenSchoolPipeline': 300,
     # 'scrapymodule.pipelines.BathspaBenSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.UclanBenSchoolPipeline': 300,
+    'scrapymodule.pipelines.UclanBenSchoolPipeline': 300,
     # 'scrapymodule.pipelines.SalfordBenSchoolPipeline': 300,
     # 'scrapymodule.pipelines.SalfordMastersTaughtSchoolPipeline': 300,
     # 'scrapymodule.pipelines.SalfordMastersResearchSchoolPipeline': 300,
     # 'scrapymodule.pipelines.CardiffMastersTaughtSchoolPipeline': 300,
-    'scrapymodule.pipelines.HopeMastersTaughtSchoolPipeline': 300,
+    # 'scrapymodule.pipelines.HopeMastersTaughtSchoolPipeline': 300,
+    # 'scrapymodule.pipelines.SchoolPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

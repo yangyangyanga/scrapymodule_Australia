@@ -527,6 +527,8 @@ class UclanBenSchoolPipeline(InsertMysql):
         except Exception as e:
             self.db.rollback()
             print("数据插入失败：%s" % (str(e)))
+            with open("./mysqlerror/"+item['university']+".txt", 'w', encoding="utf-8") as f:
+                f.write(str(e) + "\n========================")
         # self.close()
         return item
 
@@ -567,6 +569,47 @@ class HopeMastersTaughtSchoolPipeline(InsertMysql):
             self.db.rollback()
             print("数据插入失败：%s" % (str(e)))
             with open("./mysqlerror/"+item['university']+".txt", 'a+', encoding="utf-8") as f:
+                f.write(str(e) + "\n========================")
+        # self.close()
+        return item
+
+class SchoolPipeline(InsertMysql):
+    def process_item(self, item, spider):
+        sql = "insert into hooli(university, department, programme, ucas_code, degree_type, start_date, overview, mode, " \
+              "type, duration, modules, teaching_assessment, career, application_date, deadline, application_fee, " \
+              "tuition_fee, location, entry_requirements, GPA, average_score, accredited_university, Alevel, IB, IELTS, " \
+              "TOEFL, GRE, GMAT, working_experience, interview, portfolio, application_documents, how_to_apply, " \
+              "school_test, description_degree, SATI, SATII, SAT_code, ACT, ACT_code, other, url,tegree_type, degree_level) values(%s, %s, %s, %s, %s, %s, %s, %s, " \
+              "%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s, %s, %s, %s, %s, " \
+              "%s, %s, %s, %s) on duplicate key update university =VALUES(university), department =VALUES(department), " \
+              "programme =VALUES(programme), ucas_code =VALUES(ucas_code), degree_type =VALUES(degree_type), " \
+              "start_date =VALUES(start_date), overview =VALUES(overview), mode =VALUES(mode), type =VALUES(type)," \
+              " duration =VALUES(duration), modules =VALUES(modules), teaching_assessment =VALUES(teaching_assessment), " \
+              "career =VALUES(career), application_date =VALUES(application_date), deadline =VALUES(deadline), " \
+              "application_fee =VALUES(application_fee), tuition_fee =VALUES(tuition_fee), location =VALUES(location), " \
+              "entry_requirements =VALUES(entry_requirements), GPA =VALUES(GPA), average_score =VALUES(average_score), " \
+              "accredited_university =VALUES(accredited_university), Alevel =VALUES(Alevel), IB =VALUES(IB), IELTS =VALUES(IELTS), " \
+              "TOEFL =VALUES(TOEFL), GRE =VALUES(GRE), GMAT =VALUES(GMAT), working_experience =VALUES(working_experience), " \
+              "interview =VALUES(interview), portfolio =VALUES(portfolio), application_documents =VALUES(application_documents)," \
+              " how_to_apply =VALUES(how_to_apply), school_test =VALUES(school_test), " \
+              "description_degree =VALUES(description_degree), SATI =VALUES(SATI), SATII =VALUES(SATII), SAT_code =VALUES(SAT_code), " \
+              "ACT =VALUES(ACT), ACT_code =VALUES(ACT_code), other =VALUES(other), url =VALUES(url),tegree_type =VALUES(tegree_type),degree_level =VALUES(degree_level)"
+        try:
+            self.cursor.execute(sql, (item["university"], item["department"], item["programme"], item["ucas_code"], item["degree_type"],
+                                      item["start_date"], item["overview"], item["mode"], item["type"], item["duration"], item["modules"],
+                                      item["teaching_assessment"], item["career"], item["application_date"], item["deadline"],
+                                      item["application_fee"], item["tuition_fee"], item["location"], item["entry_requirements"],
+                                      item["GPA"], item["average_score"], item["accredited_university"], item["Alevel"], item["IB"],
+                                      item["IELTS"], item["TOEFL"], item["GRE"], item["GMAT"], item["working_experience"], item["interview"],
+                                      item["portfolio"], item["application_documents"], item["how_to_apply"],
+                                      item["school_test"], item["description_degree"], item["SATI"], item["SATII"], item["SAT_code"],
+                                      item["ACT"], item["ACT_code"], item["other"], item["url"], item["tegree_type"], item["degree_level"]))
+            self.db.commit()
+            print("数据插入成功")
+        except Exception as e:
+            self.db.rollback()
+            print("数据插入失败：%s" % (str(e)))
+            with open("./mysqlerror/"+item['university']+".txt", 'w', encoding="utf-8") as f:
                 f.write(str(e) + "\n========================")
         # self.close()
         return item
