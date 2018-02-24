@@ -6,7 +6,7 @@ from scrapy import cmdline
 # cmdline.execute("scrapy crawl kingsMasters".split())
 # cmdline.execute("scrapy crawl manchesterResearchMasters".split())
 # cmdline.execute("scrapy crawl strathResearchMasters".split())
-# cmdline.execute("scrapy crawl astonMasters".split())
+cmdline.execute("scrapy crawl astonMasters".split())
 
 # cmdline.execute("scrapy crawl salfordBen".split())
 # cmdline.execute("scrapy crawl salfordMastersTaught".split())
@@ -19,7 +19,7 @@ from scrapy import cmdline
 # cmdline.execute("scrapy crawl hopeMastersTaught".split())
 # cmdline.execute("scrapy crawl portMastersTaught".split())
 # cmdline.execute("scrapy crawl portMastersResearch".split())
-cmdline.execute("scrapy crawl portMastersResearch1".split())
+# cmdline.execute("scrapy crawl portMastersResearch1".split())
 # cmdline.execute("scrapy crawl lincolnBen".split())
 # cmdline.execute("scrapy crawl lincolnMastersTaught".split())
 # cmdline.execute("scrapy crawl lincolnMastersResearch".split())

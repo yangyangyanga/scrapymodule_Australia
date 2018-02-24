@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import re
-from scrapymodule.items import BristolMastersSchoolItem
+from scrapymodule.items import SchoolItem1
+from scrapymodule.getItem import get_item1
 
 class BristolMasterShoolSpider(scrapy.Spider):
     name = "bristolMasters"
@@ -25,8 +26,11 @@ class BristolMasterShoolSpider(scrapy.Spider):
             templist[i] = templist[i].replace('\r', " ")
 
     def parse_data(self, response):
-        items = BristolMastersSchoolItem()
+        items = get_item1(SchoolItem1)
         print("=================================")
+        items['country'] = "England"
+        items["website"] = "https://www.bristol.ac.uk/"
+        items['degree_level'] = '1'
         items['university'] = "University of Bristol"
 
         try:
@@ -91,7 +95,7 @@ class BristolMasterShoolSpider(scrapy.Spider):
             entryRequirementsIndex = entryRequirements.index("Entry requirements")
             entryRequirementsIndexEnd = entryRequirements.index("English language requirements")
             entryRequirementsResult = entryRequirements[entryRequirementsIndex+1:entryRequirementsIndexEnd-1]
-            items['Rntry_requirements'] = ''.join(entryRequirementsResult)
+            items['entry_requirements'] = ''.join(entryRequirementsResult)
 
             ieltsIndexEnd = entryRequirements.index("Admissions statement")
             ielts = entryRequirements[entryRequirementsIndexEnd+1:ieltsIndexEnd-1]
@@ -102,15 +106,15 @@ class BristolMasterShoolSpider(scrapy.Spider):
             # print("department = ", department)
             items['career'] = ''.join(career).replace("\n", " ").replace("\r", " ").strip()
 
-            items['URL'] = response.url
+            items['url'] = response.url
             # print(items)
             yield items
         except Exception as e:
             print("异常：", str(e))
             print(response.url)
             print("====----====")
-            with open("error.txt", "a+") as f:
-                f.write(str(e) + "\n" + response.url +"\n==========================")
+            with open("./error/"+items['university']+".txt", 'a+', encoding="utf-8") as f:
+                f.write(str(e) + "\n" + response.url + "\n========================")
 
 
 

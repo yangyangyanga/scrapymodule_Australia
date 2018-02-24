@@ -1,7 +1,8 @@
 import scrapy
 import re
 from scrapymodule.clearSpace import clear_space, clear_space_str, clear_space_list
-from scrapymodule.items import KingsMastersSchoolItem
+from scrapymodule.items import SchoolItem1
+from scrapymodule.getItem import get_item1
 
 class KingsMastersSchoolSpider(scrapy.Spider):
     name = "kingsMasters"
@@ -59,7 +60,10 @@ class KingsMastersSchoolSpider(scrapy.Spider):
             yield scrapy.Request(url, callback=self.parse_data)
 
     def parse_data(self, response):
-        item = KingsMastersSchoolItem()
+        item = get_item1(SchoolItem1)
+        item['country'] = "England"
+        item["website"] = "https://www.kcl.ac.uk/"
+        item['degree_level'] = '1'
         item['university'] = "King's College London"
         print("===============================")
         try:
@@ -122,10 +126,10 @@ class KingsMastersSchoolSpider(scrapy.Spider):
             item['entry_requirements'] = ''.join(entry_requirements)
 
             # //div[@id='coursepage-entry-requirements']/div[@class='wrapper clearfix']/div[@class='inner left lop-to-truncate lopped-off expanded']
-            Rntry_requirements = response.xpath("//div[@class='requirements uk clearfix']/div[@class='copy'][1]/table/tbody/tr[1]//text()").extract()
-            clear_space(Rntry_requirements)
-            # print(Rntry_requirements)
-            item['Rntry_requirements'] = ''.join(Rntry_requirements)
+            # Rntry_requirements = response.xpath("//div[@class='requirements uk clearfix']/div[@class='copy'][1]/table/tbody/tr[1]//text()").extract()
+            # clear_space(Rntry_requirements)
+            # # print(Rntry_requirements)
+            # item['Rntry_requirements'] = ''.join(Rntry_requirements)
 
             # //div[@id='coursepage-entry-requirements']/div[@class='wrapper clearfix']/div[@class='inner left lop-to-truncate lopped-off expanded']
             average_score = response.xpath("//div[@id='coursepage-entry-requirements']/div[@class='wrapper clearfix']/div[1]/div[@class='requirements uk clearfix']/div[@class='copy'][1]/table/tbody/tr[2]//text()").extract()
@@ -168,7 +172,7 @@ class KingsMastersSchoolSpider(scrapy.Spider):
             # print(career)
             item['career'] = ''.join(career)
 
-            item['URL'] = response.url
+            item['url'] = response.url
             yield item
         except Exception as e:
             with open("kingsMastersSchoolerror.txt", 'a+', encoding="utf-8") as f:

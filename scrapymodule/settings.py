@@ -82,7 +82,7 @@ ITEM_PIPELINES = {
     # 'scrapymodule.pipelines.CardiffMastersTaughtSchoolPipeline': 300,
     # 'scrapymodule.pipelines.HopeMastersTaughtSchoolPipeline': 300,
     # 'scrapymodule.pipelines.SchoolPipeline': 300,
-    'scrapymodule.pipelines.School1Pipeline': 300,
+    # 'scrapymodule.pipelines.School1Pipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

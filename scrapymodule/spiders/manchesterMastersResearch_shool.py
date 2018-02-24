@@ -1,8 +1,9 @@
 import scrapy
 import re
 from scrapymodule.clearSpace import clear_space, clear_space_str
-from scrapymodule.getItem import get_item
-from scrapymodule.items import ManchesterMastersResearchSchoolItem
+# from scrapymodule.getItem import get_item
+from scrapymodule.items import SchoolItem1
+from scrapymodule.getItem import get_item1
 
 class ManchesterMastersResearchSchoolSpider(scrapy.Spider):
     name = "manchesterResearchMasters"
@@ -338,7 +339,10 @@ class ManchesterMastersResearchSchoolSpider(scrapy.Spider):
     # print(len(start_urls))
     # print(start_urls)
     def parse(self, response):
-        item = get_item(ManchesterMastersResearchSchoolItem)
+        item = get_item1(SchoolItem1)
+        item['country'] = "England"
+        item["website"] = "https://www.manchester.ac.uk/"
+        item['degree_level'] = '1'
         item['university'] = "University of Manchester"
         print("===========================")
         try:
@@ -425,13 +429,13 @@ class ManchesterMastersResearchSchoolSpider(scrapy.Spider):
                 else:
                     item['interview'] = ''.join(allcontent[interviewIndex:modulesIndex])
             print(item['interview'])
-            item['type'] = "Research"
+            # item['type'] = "Research"
             fee1 = response.xpath("//div[@id='course-profile']/div[@class='course-profile-content full-page']/ul[1]/li[1]//text()").extract()
             fee1 = ''.join(fee1)
             fee = clear_space_str(fee1)
             item['tuition_fee'] = ''.join(fee)
 
-            item['URL'] = response.url
+            item['url'] = response.url
             print(response.url)
             # print(item)
             yield item

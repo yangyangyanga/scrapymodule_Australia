@@ -650,3 +650,18 @@ class School1Pipeline(InsertMysql):
                 f.write(str(e) + "\n========================")
         # self.close()
         return item
+
+class School1UpdatePipeline(InsertMysql):
+    def process_item(self, item, spider):
+        sql = "update tmp_school_major set entry_requirements = %s where university = %s and programme = %s and degree_level = %s"
+        try:
+            self.cursor.execute(sql, (item["entry_requirements"],item["university"], item["programme"], item["degree_level"]))
+            self.db.commit()
+            print("数据插入成功")
+        except Exception as e:
+            self.db.rollback()
+            print("数据插入失败：%s" % (str(e)))
+            with open("./mysqlerror/"+item['university']+".txt", 'w', encoding="utf-8") as f:
+                f.write(str(e) + "\n========================")
+        # self.close()
+        return item

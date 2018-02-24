@@ -1,8 +1,8 @@
 import scrapy
 import re
 from scrapymodule.clearSpace import clear_space, clear_space_str
-from scrapymodule.items import StrathMastersResearchSchoolItem
-from scrapymodule.getItem import get_item
+from scrapymodule.items import SchoolItem1
+from scrapymodule.getItem import get_item1
 
 class StrathMastersSchoolSpider(scrapy.Spider):
     name = "strathResearchMasters"
@@ -29,7 +29,10 @@ class StrathMastersSchoolSpider(scrapy.Spider):
             f.write(response.url+"\n==============")
 
     def parse_data(self, response):
-        item = get_item(StrathMastersResearchSchoolItem)
+        item = get_item1(SchoolItem1)
+        item['country'] = "England"
+        item["website"] = "https://www.strath.ac.uk/"
+        item['degree_level'] = '1'
         item["university"] = "University of Strathclyde"
         print("==========================")
         try:
@@ -66,7 +69,7 @@ class StrathMastersSchoolSpider(scrapy.Spider):
 
             # 学术要求、英语要求
             item["IELTS"] = "Our IELTS requirement is 6.5, however some courses may look for more."
-            item['Rntry_requirements'] = "Students are required to have a GPA of approximately 80 in academic subjects from a four-year Bachelors degree.Students interested in PhD must usually have a Masters and must include a proposal in their application.For further information on entry requirements, you can contact our representative Colin Rogers"
+            item['entry_requirements'] = "Students are required to have a GPA of approximately 80 in academic subjects from a four-year Bachelors degree.Students interested in PhD must usually have a Masters and must include a proposal in their application.For further information on entry requirements, you can contact our representative Colin Rogers"
 
             # 学费    //article[@id='fees-and-funding']/ul[3]/li
             tuition_fee = response.xpath("//article[@id='fees-and-funding']//text()").extract()
@@ -95,8 +98,8 @@ class StrathMastersSchoolSpider(scrapy.Spider):
             clear_space(career)
             career = ''.join(career)
             item['career'] = career
-            item['URL'] = response.url
-            item['type'] = "Research"
+            item['url'] = response.url
+            # item['type'] = "Research"
             # print(item)
             yield item
         except Exception as e:

@@ -1,7 +1,8 @@
 import scrapy
 import re
 from scrapymodule.clearSpace import clear_space, clear_space_str
-from scrapymodule.items import StrathMastersSchoolItem
+from scrapymodule.items import SchoolItem1
+from scrapymodule.getItem import get_item1
 
 class StrathMastersSchoolSpider(scrapy.Spider):
     name = "strathMasters"
@@ -26,7 +27,10 @@ class StrathMastersSchoolSpider(scrapy.Spider):
         with open("err.txt", "a+") as f:
             f.write(response.url+"\n==============")
     def parse_data(self, response):
-        item = StrathMastersSchoolItem()
+        item = get_item1(SchoolItem1)
+        item['country'] = "England"
+        item["website"] = "https://www.strath.ac.uk/"
+        item['degree_level'] = '1'
         item["university"] = "University of Strathclyde"
         print("==========================")
         try:
@@ -77,10 +81,10 @@ class StrathMastersSchoolSpider(scrapy.Spider):
             if "Learning & teaching" in modulesAssessment:
                 assessmentIndex = modulesAssessment.index("Learning & teaching")
                 item['modules'] = ''.join(modulesAssessment[:assessmentIndex-1])
-                item["teaching_assessment"] = ''.join(modulesAssessment[assessmentIndex:])
+                item["teaching"] = ''.join(modulesAssessment[assessmentIndex:])
             else:
                 item['modules'] = ''.join(modulesAssessment)
-                item["teaching_assessment"] = ''
+                item["teaching"] = ''
 
             # 学术要求、英语要求
             entryRequirement = response.xpath("//article[@id='entry-requirements']//text()").extract()
@@ -106,7 +110,7 @@ class StrathMastersSchoolSpider(scrapy.Spider):
                 else:
                     entryIndex = -1
             Rntry_requirements = entryRequirement[:entryIndex]
-            item['Rntry_requirements'] = ''.join(Rntry_requirements)
+            item['entry_requirements'] = ''.join(Rntry_requirements)
 
             # 学费    //article[@id='fees-and-funding']/ul[3]/li
             tuition_fee = response.xpath("/article[@id='fees-and-funding']/ul[3]/li//text()").extract()
@@ -117,11 +121,11 @@ class StrathMastersSchoolSpider(scrapy.Spider):
             career = response.xpath("//article[@id='careers']//text()").extract()
             career = ''.join(career)
             item['career'] = career
-            item['URL'] = response.url
-            item['type'] = "Taught"
+            item['url'] = response.url
+            # item['type'] = "Taught"
             yield item
         except Exception as e:
-            with open("error.txt", 'a+', encoding="utf-8") as f:
+            with open("./error/" + item['university'] + ".txt", 'a+', encoding="utf-8") as f:
                 f.write(str(e) + "\n" + response.url + "\n========================")
             print("异常：", str(e))
             print("报错url：", response.url)

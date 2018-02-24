@@ -1,8 +1,8 @@
 import scrapy
 import re
 from scrapymodule.clearSpace import clear_space, clear_space_str
-from scrapymodule.items import AstonMastersSchoolItem
-from scrapymodule.getItem import get_item
+from scrapymodule.items import SchoolItem1
+from scrapymodule.getItem import get_item1
 
 class AstonMastersSchoolSpider(scrapy.Spider):
     name = "astonMasters"
@@ -76,7 +76,10 @@ class AstonMastersSchoolSpider(scrapy.Spider):
 "http://www.aston.ac.uk/study/postgraduate/taught-programmes/school/abs/msc-work-psychology-business/",]
 
     def parse(self, response):
-        item = get_item(AstonMastersSchoolItem)
+        item = get_item1(SchoolItem1)
+        item['country'] = "England"
+        item["website"] = "https://www.aston.ac.uk/"
+        item['degree_level'] = '1'
         print("======================================")
         item['university'] = "Aston University"
         try:
@@ -164,7 +167,7 @@ class AstonMastersSchoolSpider(scrapy.Spider):
                 assessmentIndexEnd = allcontent.index("Your future career prospects")
             else:
                 assessmentIndexEnd = -1
-            item['teaching_assessment'] = ''.join(allcontent[assessmentIndex:assessmentIndexEnd])
+            item['teaching'] = ''.join(allcontent[assessmentIndex:assessmentIndexEnd])
 
             if "Career Opportunities" in allcontent:
                 careerIndex = allcontent.index("Career Opportunities")
@@ -266,8 +269,8 @@ class AstonMastersSchoolSpider(scrapy.Spider):
             # print(item['teaching_assessment'])
             print(response.url)
             # print(item)
-            item['type'] = "Taught"
-            item['URL'] = response.url
+            # item['type'] = "Taught"
+            item['url'] = response.url
             yield item
         except Exception as e:
             with open("./error/astonMastersSchoolerror.txt", 'a+', encoding="utf-8") as f:
