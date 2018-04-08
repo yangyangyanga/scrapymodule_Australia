@@ -20,7 +20,8 @@ NEWSPIDER_MODULE = 'scrapymodule.spiders'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
-LOG_LEVEL = 'WARNING'
+# LOG_LEVEL = 'WARNING'
+# RETRY_ENABLED = False
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -39,10 +40,10 @@ LOG_LEVEL = 'WARNING'
 #TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-#DEFAULT_REQUEST_HEADERS = {
+# DEFAULT_REQUEST_HEADERS = {
 #   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
 #   'Accept-Language': 'en',
-#}
+# }
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
@@ -65,24 +66,8 @@ LOG_LEVEL = 'WARNING'
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   # 'scrapymodule.pipelines.BristolMasterSchoolPipeline': 300,
-   # 'scrapymodule.pipelines.StrathMastersSchoolPipeline': 300,
-   # 'scrapymodule.pipelines.ManchesterMastersSchoolPipeline': 300,
-   # 'scrapymodule.pipelines.KingsMastersSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.ManchesterMastersResearchSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.StrathMastersResearchSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.AstonMastersSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.CardiffmetBenSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.HertsBenSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.BathspaBenSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.UclanBenSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.SalfordBenSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.SalfordMastersTaughtSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.SalfordMastersResearchSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.CardiffMastersTaughtSchoolPipeline': 300,
-    # 'scrapymodule.pipelines.HopeMastersTaughtSchoolPipeline': 300,
     # 'scrapymodule.pipelines.SchoolPipeline': 300,
-    # 'scrapymodule.pipelines.School1Pipeline': 300,
+    'scrapymodule.pipelines.SchoolPipelineLocal': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
